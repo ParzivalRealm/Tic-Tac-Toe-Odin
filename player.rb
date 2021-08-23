@@ -8,10 +8,8 @@ class Player
   attr_accessor :player_selection 
 
   def initialize()
-    puts"Please enter player name"
-    @player_name = gets.chomp
-    puts"Please enter your icon"
-    @player_icon = gets.chomp
+    @player_name = get_player_name
+    @player_icon = get_player_icon
     @player_selection = Array.new
   end
 
